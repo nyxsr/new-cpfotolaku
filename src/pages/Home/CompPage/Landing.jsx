@@ -12,7 +12,7 @@ function Landing() {
   return (
     <motion.section
       style={{ backgroundImage: `url(${BGHero})` }}
-      className="h-[70vh] bg-fill relative w-screen bg-no-repeat bg-fixed"
+      className="h-[70vh] bg-cover relative w-screen bg-no-repeat bg-fixed"
     >
       <Navbar />
       <motion.div
