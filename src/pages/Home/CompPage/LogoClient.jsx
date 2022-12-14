@@ -6,7 +6,7 @@ function LogoClient() {
     <motion.section
       animate={{ x: ["0%", "-68%",'0%'] }}
       transition={{ repeat: Infinity, repeatType:'mirror', type:'tween', ease:'linear', duration: 30, repeatDelay:.2 }}
-      className="bg-[#282828] mt-7 flex gap-5 text-2xl font-bold items-center px-5 w-fit text-white"
+      className="bg-[#282828] flex gap-5 text-2xl font-bold items-center px-5 w-fit text-white relative z-20"
     >
       <p className="w-fit px-2 text-center">Jiniso</p>
       <p className="w-fit px-2 text-center">Sanvanina</p>
