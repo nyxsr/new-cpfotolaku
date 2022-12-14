@@ -3,6 +3,7 @@ import Benefit from "./CompPage/Benefit";
 import ElevatePitch from "./CompPage/ElevatePitch";
 import Landing from "./CompPage/Landing";
 import LogoClient from "./CompPage/LogoClient";
+import Services from "./CompPage/Services";
 
 function Home() {
   useEffect(() => {
@@ -12,9 +13,10 @@ function Home() {
   return (
     <div className="w-screen overflow-hidden">
       <Landing />
-      <ElevatePitch/>
-      <LogoClient/>
-      <Benefit/>
+      <ElevatePitch />
+      <LogoClient />
+      <Benefit />
+      <Services/>
     </div>
   );
 }

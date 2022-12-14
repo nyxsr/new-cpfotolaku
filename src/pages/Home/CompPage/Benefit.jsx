@@ -1,5 +1,5 @@
 import React from "react";
-import { Benefit1, BGBenefit } from "../../../assets/assets";
+import { Benefit1 } from "../../../assets/assets";
 import CardBenefit from "../../../components/Card/CardBenefit";
 
 const ListBenefit = [
@@ -20,7 +20,7 @@ const ListBenefit = [
 
 function Benefit() {
   return (
-    <section className="bg-[#1c1c1c] h-screen relative py-10 z-10" style={{ backgroundImage:`url('${BGBenefit}')` }}>
+    <section className="bg-[#1c1c1c] h-screen relative py-10 z-10">
       <h1 className="text-center text-white font-bold pb-10 text-3xl">
         Kenapa Fotolaku ?
       </h1>

@@ -8,21 +8,23 @@ import Navbar from "../../../components/Navbar/Navbar";
 function Landing() {
   let { scrollY } = useScroll();
 
-  const y = useTransform(scrollY, [0, 300], ["0%", "-20%"]);
+  const y = useTransform(scrollY, [0, 300], ["0%", "-15%"]);
+  const gap = useTransform(scrollY, [0, 300], ["80%", "0%"]);
+  const ctaY = useTransform(scrollY,[0,300],['0%','-80%'])
   return (
     <motion.section
       style={{ backgroundImage: `url(${BGHero})` }}
-      className="h-[70vh] bg-cover relative w-screen bg-no-repeat bg-fixed"
+      className="h-[70vh] bg-fill relative w-screen bg-no-repeat bg-fixed"
     >
       <Navbar />
       <motion.div
-        style={{ y }}
-        className="flex flex-col justify-between h-[50%] px-6 pt-3 fixed -z-0"
+        style={{ y,gap }}
+        className="flex flex-col h-[50%] px-6 pt-3 fixed -z-0"
       >
         <motion.h1 className="text-white font-bold text-xl sm:text-3xl w-[90%]">
           Jasa Foto Yang Memahami Kebutuhan Bisnis Anda
         </motion.h1>
-        <div className="flex flex-col gap-4">
+        <motion.div className="flex flex-col gap-4 absolute bottom-0" style={{ y:ctaY }}>
           <div>
             <button className="bg-[#FD8703] font-semibold py-2 px-2 w-fit rounded-md">
               Let's Talk!
@@ -37,7 +39,7 @@ function Landing() {
               <FaTiktok size={25} color={"#FD8703"} />
             </div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.section>
   );
