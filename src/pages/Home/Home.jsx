@@ -3,6 +3,7 @@ import Benefit from "./CompPage/Benefit";
 import ElevatePitch from "./CompPage/ElevatePitch";
 import Landing from "./CompPage/Landing";
 import LogoClient from "./CompPage/LogoClient";
+import Model from "./CompPage/Model";
 import Services from "./CompPage/Services";
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       <Landing />
       <Benefit />
       <Services/>
+      <Model/>
     </div>
   );
 }
