@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { BsInstagram } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
@@ -6,10 +6,24 @@ import { BGHero, TemporaryVideo } from "../../../assets/assets";
 import Navbar from "../../../components/Navbar/Navbar";
 import ElevatePitch from "./ElevatePitch";
 import LogoClient from "./LogoClient";
+import { useInView } from "react-intersection-observer";
+import { useSelector } from "react-redux";
 
 function Landing() {
   const [hidePhoto, setHidePhoto] = useState(false);
   const [hideVideo, setHideVideo] = useState(true);
+  const [ref,inView] = useInView({threshold:0.1});
+  const [isFixed,setFixed] = useState(false);
+  const {isShow} = useSelector((state)=>state.benefitView)
+
+  useEffect(()=>{
+    if (inView === true) {
+      setFixed(true)
+    }
+    if (isShow === false) {
+      setFixed(false)
+    }
+  },[inView,isShow])
   
   let { scrollY } = useScroll();
 
@@ -59,9 +73,10 @@ function Landing() {
           </div>
         </motion.div>
       </motion.div>
-      <div className="absolute bottom-0 z-10">
+      <div className={`${isFixed === true ? 'fixed' :'absolute'} bottom-0 z-10`}>
         <ElevatePitch />
         <LogoClient />
+        <div ref={ref}/>
       </div>
     </motion.section>
   );
