@@ -12,6 +12,17 @@ import ProductWhiteServicePhoto from './ProdInWhite.webp'
 import DigitalImageServicePhoto from './digitalImaging.webp'
 import ProductThreeServicePhoto from './Prodthreed.webp'
 import VideoCatServicePhoto from './VideoCatalogue.webp'
+import ModelDio from './A7203561.webp'
+import ModelJose from './A7202358.webp'
+import ModelJessica from './A7202762.webp'
+import ModelEdward from './A7208661.webp'
+import ModelConny from './A7208962.webp'
+import ModelJennifer from './A7201063.webp'
+import ModelJordan from './A7208475.webp'
+import ModelKevin from './A7205024.webp'
+import ModelNada from './A7209309.webp'
+import ModelSteven from './A7201499.webp'
+import ModelWardah from './A7203263.webp'
 
 export {
   BGHero,
@@ -27,5 +38,16 @@ export {
   ProductWhiteServicePhoto,
   DigitalImageServicePhoto,
   ProductThreeServicePhoto,
-  VideoCatServicePhoto
+  VideoCatServicePhoto,
+  ModelDio,
+  ModelJose,
+  ModelJessica,
+  ModelEdward,
+  ModelConny,
+  ModelJennifer,
+  ModelJordan,
+  ModelKevin,
+  ModelNada,
+  ModelSteven,
+  ModelWardah
 };
