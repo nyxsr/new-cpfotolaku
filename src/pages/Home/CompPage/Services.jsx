@@ -1,8 +1,13 @@
 import React from "react";
 import {
   BeautyServicePhoto,
+  CreativeServicePhoto,
+  DigitalImageServicePhoto,
   LookbookServicePhoto,
   PlainServicePhoto,
+  ProductThreeServicePhoto,
+  ProductWhiteServicePhoto,
+  VideoCatServicePhoto,
 } from "../../../assets/assets";
 import CardService from "../../../components/Card/CardService";
 
@@ -20,6 +25,25 @@ function Services() {
       foto: BeautyServicePhoto,
       text: "Beauty Shoot",
     },
+    {
+      foto: CreativeServicePhoto,
+      text: 'Creative Shoot'
+    },{
+      foto: ProductWhiteServicePhoto,
+      text: "Product On White"
+    },
+    {
+      foto: DigitalImageServicePhoto,
+      text: "Digital Imaging"
+    },
+    {
+      foto: ProductThreeServicePhoto,
+      text: 'Product 3D'
+    },
+    {
+      foto: VideoCatServicePhoto,
+      text: 'Video Catalogue'
+    }
   ];
 
   return (
