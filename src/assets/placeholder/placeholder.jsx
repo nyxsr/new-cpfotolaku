@@ -13,6 +13,10 @@ import PlaceConny from "./A7208962.webp";
 import PlaceCreative from "./A7209175.webp";
 import PlaceNada from "./A7209309.webp";
 import PlaceLookbook from "./A7209602.webp";
+import PlaceDigital from './digitalImaging.webp'
+import PlaceWhite from './ProdInWhite.webp'
+import PlaceThree from './Prodthreed.webp'
+import PlaceVideo from './VideoCatalogue.webp'
 
 export {
   PlaceJennifer,
@@ -29,5 +33,9 @@ export {
   PlaceConny,
   PlaceCreative,
   PlaceNada,
-  PlaceLookbook
+  PlaceLookbook,
+  PlaceDigital,
+  PlaceWhite,
+  PlaceThree,
+  PlaceVideo
 };
