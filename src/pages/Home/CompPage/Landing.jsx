@@ -48,13 +48,13 @@ function Landing() {
       <Navbar />
       <motion.div
         style={{ y, gap }}
-        className="flex flex-col h-[50%] px-6 pt-3 fixed -z-0"
+        className="flex flex-col h-[50%] px-6 pt-10 fixed -z-0"
       >
         <motion.h1 className="text-white font-bold text-xl sm:text-3xl w-[90%]">
           Jasa Foto Yang Memahami Kebutuhan Bisnis Anda
         </motion.h1>
         <motion.div
-          className="flex flex-col gap-4 absolute bottom-0"
+          className="flex flex-col gap-4 absolute -bottom-24"
           style={{ y: ctaY }}
         >
           <div>
