@@ -13,8 +13,6 @@ function Home() {
   return (
     <div className="w-screen overflow-hidden">
       <Landing />
-      <ElevatePitch />
-      <LogoClient />
       <Benefit />
       <Services/>
     </div>

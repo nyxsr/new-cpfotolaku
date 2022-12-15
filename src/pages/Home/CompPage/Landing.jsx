@@ -1,30 +1,48 @@
-import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { BsInstagram } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
-import { BGHero } from "../../../assets/assets";
+import { BGHero, TemporaryVideo } from "../../../assets/assets";
 import Navbar from "../../../components/Navbar/Navbar";
+import ElevatePitch from "./ElevatePitch";
+import LogoClient from "./LogoClient";
 
 function Landing() {
+  const [hidePhoto, setHidePhoto] = useState(false);
+  const [hideVideo, setHideVideo] = useState(true);
+  
   let { scrollY } = useScroll();
+
+  const VideoLoaded = () =>{
+    setHidePhoto(true)
+    setHideVideo(false)
+  }
 
   const y = useTransform(scrollY, [0, 300], ["0%", "-15%"]);
   const gap = useTransform(scrollY, [0, 300], ["80%", "0%"]);
-  const ctaY = useTransform(scrollY,[0,300],['0%','-80%'])
+  const ctaY = useTransform(scrollY, [0, 300], ["0%", "-80%"]);
   return (
-    <motion.section
-      style={{ backgroundImage: `url(${BGHero})` }}
-      className="h-[70vh] bg-fill relative w-screen bg-no-repeat bg-fixed"
-    >
+    <motion.section className="h-[150vh] relative w-screen">
+        <AnimatePresence>
+      {hidePhoto === false && (
+          <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} style={{ backgroundImage: `url(${BGHero})` }} className='w-full h-full absolute bg-no-repeat bg-fixed bg-fill z-0'/>
+          )}
+    <motion.video initial={{ opacity:0 }} animate={{ opacity:1 }} onLoadedData={VideoLoaded} style={{ visibility:hideVideo === true ? 'hidden' : 'visible' }} autoPlay muted loop className="fixed w-full h-full object-cover">
+        <source src={TemporaryVideo} type="video/mp4" />
+      </motion.video>
+          </AnimatePresence>
       <Navbar />
       <motion.div
-        style={{ y,gap }}
+        style={{ y, gap }}
         className="flex flex-col h-[50%] px-6 pt-3 fixed -z-0"
       >
         <motion.h1 className="text-white font-bold text-xl sm:text-3xl w-[90%]">
           Jasa Foto Yang Memahami Kebutuhan Bisnis Anda
         </motion.h1>
-        <motion.div className="flex flex-col gap-4 absolute bottom-0" style={{ y:ctaY }}>
+        <motion.div
+          className="flex flex-col gap-4 absolute bottom-0"
+          style={{ y: ctaY }}
+        >
           <div>
             <button className="bg-[#FD8703] font-semibold py-2 px-2 w-fit rounded-md">
               Let's Talk!
@@ -41,6 +59,10 @@ function Landing() {
           </div>
         </motion.div>
       </motion.div>
+      <div className="absolute bottom-0 z-10">
+        <ElevatePitch />
+        <LogoClient />
+      </div>
     </motion.section>
   );
 }
