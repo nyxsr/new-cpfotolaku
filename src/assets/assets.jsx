@@ -23,8 +23,10 @@ import ModelKevin from './A7205024.webp'
 import ModelNada from './A7209309.webp'
 import ModelSteven from './A7201499.webp'
 import ModelWardah from './A7203263.webp'
+import ClientTemporaryVideo from './ClientTemporary.mp4'
 
 export {
+  ClientTemporaryVideo,
   BGHero,
   Logo,
   Benefit1,

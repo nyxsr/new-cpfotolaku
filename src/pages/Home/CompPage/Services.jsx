@@ -13,6 +13,7 @@ import { PlaceBeauty, PlaceCreative, PlaceDigital, PlaceLookbook, PlacePlain, Pl
 import CardService from "../../../components/Card/CardService";
 
 function Services() {
+
   const DataService = [
     {
       foto: PlainServicePhoto,
@@ -61,7 +62,7 @@ function Services() {
       <div className="overflow-x-scroll">
         <div className="flex flex-nowrap py-6 gap-4 w-fit">
           {DataService.map((v, i) => {
-            return <CardService foto={v.foto} text={v.text} />;
+            return <CardService key={i} foto={v.foto} text={v.text} />;
           })}
         </div>
       </div>
