@@ -17,8 +17,20 @@ import PlaceDigital from './digitalImaging.webp'
 import PlaceWhite from './ProdInWhite.webp'
 import PlaceThree from './Prodthreed.webp'
 import PlaceVideo from './VideoCatalogue.webp'
+import PlaceConsult from './ProcessConsult.webp'
+import PlaceDelivery from './ProcessDelivery.webp'
+import PlaceEdit from './ProcessEdit.webp'
+import PlaceIron from './ProcessIron.webp'
+import PlacePhoto from './ProcessPhoto.webp'
+import PlaceReturn from './ProcessReturn.webp'
 
 export {
+  PlaceConsult,
+  PlaceDelivery,
+  PlaceEdit,
+  PlaceIron,
+  PlacePhoto,
+  PlaceReturn,
   PlaceJennifer,
   PlacePlain,
   PlaceSteven,
