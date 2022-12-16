@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BsPlayCircle } from "react-icons/bs";
 import { ClientTemporaryVideo } from "../../assets/assets";
 import {AiFillStar, AiOutlineStar} from 'react-icons/ai'
