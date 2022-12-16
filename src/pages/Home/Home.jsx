@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
+import Behind from "./CompPage/Behind";
 import Benefit from "./CompPage/Benefit";
-import ElevatePitch from "./CompPage/ElevatePitch";
+import Client from "./CompPage/Client";
 import Landing from "./CompPage/Landing";
-import LogoClient from "./CompPage/LogoClient";
 import Model from "./CompPage/Model";
 import Services from "./CompPage/Services";
 
@@ -17,6 +17,7 @@ function Home() {
       <Benefit />
       <Services/>
       <Model/>
+      <Client/>
     </div>
   );
 }
