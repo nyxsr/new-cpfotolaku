@@ -4,6 +4,7 @@ import BGBenefit from "./bg-benefit.webp";
 import Benefit1 from "./ticket-discount.svg";
 import ImageNotPhone from "./onPhone.svg";
 import TemporaryVideo from "./Beautistory_Square.mp4";
+import Quote from './quotes.svg'
 //*Service Section
 import PlainServicePhoto from "./A7202354.webp";
 import LookbookServicePhoto from "./A7209602.webp";
@@ -39,6 +40,7 @@ import ProcessReturn from './ProcessReturn.webp'
 import ClientTemporaryVideo from './ClientTemporary.mp4'
 
 export {
+  Quote,
   ProcessConsult,
   ProcessDelivery,
   ProcessEdit,

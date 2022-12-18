@@ -3,6 +3,7 @@ import Behind from "./CompPage/Behind";
 import Benefit from "./CompPage/Benefit";
 import Client from "./CompPage/Client";
 import Landing from "./CompPage/Landing";
+import LogoClient from "./CompPage/LogoClient";
 import Model from "./CompPage/Model";
 import Process from "./CompPage/Process";
 import Services from "./CompPage/Services";
@@ -15,6 +16,7 @@ function Home() {
   return (
     <div className="w-screen overflow-hidden">
       <Landing />
+      <LogoClient/>
       <Process/>
       <Benefit />
       <Services/>

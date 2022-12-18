@@ -5,25 +5,10 @@ import { FaTiktok } from "react-icons/fa";
 import { BGHero, TemporaryVideo } from "../../../assets/assets";
 import Navbar from "../../../components/Navbar/Navbar";
 import ElevatePitch from "./ElevatePitch";
-import LogoClient from "./LogoClient";
-import { useInView } from "react-intersection-observer";
-import { useSelector } from "react-redux";
 
 function Landing() {
   const [hidePhoto, setHidePhoto] = useState(false);
   const [hideVideo, setHideVideo] = useState(true);
-  const [ref,inView] = useInView({threshold:0.1});
-  const [isFixed,setFixed] = useState(false);
-  const {isShow} = useSelector((state)=>state.benefitView)
-
-  useEffect(()=>{
-    if (inView === true) {
-      setFixed(true)
-    }
-    if (isShow === false) {
-      setFixed(false)
-    }
-  },[inView,isShow])
   
   let { scrollY } = useScroll();
 
@@ -48,7 +33,7 @@ function Landing() {
       <Navbar />
       <motion.div
         style={{ y, gap }}
-        className="flex flex-col h-[50%] px-6 pt-10 fixed -z-0"
+        className="flex flex-col h-[60%] px-6 pt-10 fixed -z-0"
       >
         <motion.h1 className="text-white font-bold text-xl sm:text-3xl w-[90%]">
           Jasa Foto Yang Memahami Kebutuhan Bisnis Anda
@@ -73,11 +58,9 @@ function Landing() {
           </div>
         </motion.div>
       </motion.div>
-      <div className={`${isFixed === true ? 'fixed' :'absolute'} bottom-0 z-10`}>
+      <motion.div className={`absolute bottom-0 z-10`}>
         <ElevatePitch />
-        <LogoClient />
-        <div ref={ref}/>
-      </div>
+      </motion.div>
     </motion.section>
   );
 }
