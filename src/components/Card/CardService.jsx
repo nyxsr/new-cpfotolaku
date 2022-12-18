@@ -1,23 +1,29 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { AiFillStar } from "react-icons/ai";
 
 function CardService(props) {
   return (
-    <div className="w-[12.375rem] h-[15.25rem] relative">
+    <div className="relative bg-white flex flex-col rounded-2xl py-3 px-3">
       <LazyLoadImage
-        width={198}
-        height={244}
+        width={212}
+        height={199}
         src={props.foto}
         placeholderSrc={props.placeholder}
         effect="blur"
-        className="w-full h-full object-cover rounded-2xl"
+        className="w-[13.25rem] h-[12.4375rem] object-cover rounded-2xl"
         alt={props.text}
       />
-       <div className="bg-black/20 absolute w-full h-full top-0 z-0" />
-      <p className="absolute bottom-5 left-3 z-10 text-white font-bold text-xl">
-        {props.text}
-      </p>
+      <p className="text-lg font-bold pt-[14px]">{props.text}</p>
+      <div className="flex justify-between">
+        <p className="font-bold text-[#FD8703]">Rp.50.000 / pcs</p>
+        <div className="flex items-center">
+          <AiFillStar color="#fd8703" />
+          <p className="font-semibold">4.5</p>
+        </div>
+      </div>
+      <p className="text-[#747474] text-[12px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci placeat autem eveniet. Amet necessitatibus repellendus eligendi minus, culpa enim eum?</p>
     </div>
   );
 }
