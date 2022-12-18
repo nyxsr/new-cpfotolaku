@@ -13,7 +13,7 @@ function CardModel(props) {
         className="w-full h-full object-cover rounded-2xl z-0"
         alt={props.text}
       />
-      <div className="bg-black/20 h-full w-full absolute top-0"/>
+      <div className="bg-black/20 h-full w-full absolute top-0 rounded-2xl"/>
       <p className="absolute bottom-5 left-3 z-10 text-white font-bold text-xl">
         {props.text}
       </p>
