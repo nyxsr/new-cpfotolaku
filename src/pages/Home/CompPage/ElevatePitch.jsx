@@ -1,12 +1,16 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 function ElevatePitch() {
+  let ref = useRef(null)
+  let {scrollYProgress} = useScroll({target:ref})
+
+  const y = useTransform(scrollYProgress,[0,.1,.5,1],['0%','-5%','20%','40%'])
   return (
-    <motion.section className='pt-3 z-10 relative px-5 w-screen bg-transparent'>
-      <div className='bg-[#D9D9D9]/90 px-5 mx-auto py-[5vh] w-[99%]'>
-        <p className='font-bold text-[1.3rem]'>Punya Produk Bagus Tapi Visualisasinya Tidak Mendukung ?</p>
-        <p className='mt-[8vh]'>
+    <motion.section ref={ref} style={{ y }} className='pt-3 z-10 relative w-screen bg-transparent'>
+      <div className='bg-[#F3B762]/90 mx-auto px-3 py-5 w-screen'>
+        <p className={`font-bold text-[1.3rem] before:content-quotes after:content-quotes`}>Punya Produk Bagus Tapi Visualisasinya Tidak Mendukung ?</p>
+        <p className='text-right text-xl mt-5'>
             Fotolaku Hadir Menjadi Solusi
         </p>
       </div>
