@@ -3,11 +3,10 @@ import { Benefit1 } from '../../assets/assets'
 
 function CardBenefit(props) {
   return (
-    <div className='flex flex-col gap-4 justify-center items-center'>
-      <div className='bg-[#FEF0CD] py-2 px-2 w-fit text-5xl rounded-full'>
-        <img src={`${Benefit1}`}/>
-      </div>
-      <p className='text-white'>{props.text}</p>
+    <div className='px-6'>
+     <h3 className='pb-2 text-2xl font-bold'>{props.context}</h3>
+     <p className='pb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nostrum.</p>
+    <img src={Benefit1} alt="" />
     </div>
   )
 }

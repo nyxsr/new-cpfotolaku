@@ -12,24 +12,36 @@ import {
   ModelSteven,
   ModelWardah,
 } from "../../../assets/assets";
-import { PlaceConny, PlaceDio, PlaceEdward, PlaceJennifer, PlaceJessica, PlaceJordan, PlaceJose, PlaceKevin, PlaceNada, PlaceSteven, PlaceWardah } from "../../../assets/placeholder/placeholder";
+import {
+  PlaceConny,
+  PlaceDio,
+  PlaceEdward,
+  PlaceJennifer,
+  PlaceJessica,
+  PlaceJordan,
+  PlaceJose,
+  PlaceKevin,
+  PlaceNada,
+  PlaceSteven,
+  PlaceWardah,
+} from "../../../assets/placeholder/placeholder";
 import CardModel from "../../../components/Card/CardModel";
 
 function Model() {
   const DataModel = [
     {
       foto: ModelDio,
-      placeholder:PlaceDio,
+      placeholder: PlaceDio,
       text: "Dio",
     },
     {
       foto: ModelJose,
-      placeholder:PlaceJose,
+      placeholder: PlaceJose,
       text: "Jose",
     },
     {
       foto: ModelJessica,
-      placeholder:PlaceJessica,
+      placeholder: PlaceJessica,
       text: "Jessica",
     },
     {
@@ -39,7 +51,7 @@ function Model() {
     },
     {
       foto: ModelConny,
-      placeholder:PlaceConny,
+      placeholder: PlaceConny,
       text: "Conny",
     },
     {
@@ -74,8 +86,12 @@ function Model() {
     },
   ];
   return (
-    <section className="relative bg-[#1c1c1c] py-5 px-5 z-10">
-      <h1 className="font-bold text-3xl text-white">Model Collection</h1>
+    <section className="relative px-5 z-10">
+      <h1 className="font-bold text-2xl">Complete Model Collection</h1>
+      <p className="text-[#9d9d9d]">
+        Fotolaku memiliki model yang sangat professional yang cocok untuk brand
+        anda
+      </p>
       <div className="overflow-x-scroll">
         <div className="flex flex-nowrap py-6 gap-4 w-fit">
           {DataModel.map((v, i) => {

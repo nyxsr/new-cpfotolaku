@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
-import Behind from "./CompPage/Behind";
 import Benefit from "./CompPage/Benefit";
 import Client from "./CompPage/Client";
 import Landing from "./CompPage/Landing";
 import LogoClient from "./CompPage/LogoClient";
-import Model from "./CompPage/Model";
 import Process from "./CompPage/Process";
 import Services from "./CompPage/Services";
 
@@ -18,9 +16,8 @@ function Home() {
       <Landing />
       <LogoClient/>
       <Process/>
-      <Benefit />
       <Services/>
-      <Model/>
+      <Benefit />
       <Client/>
     </div>
   );
