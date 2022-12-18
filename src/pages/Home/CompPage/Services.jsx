@@ -9,20 +9,28 @@ import {
   ProductWhiteServicePhoto,
   VideoCatServicePhoto,
 } from "../../../assets/assets";
-import { PlaceBeauty, PlaceCreative, PlaceDigital, PlaceLookbook, PlacePlain, PlaceThree, PlaceVideo, PlaceWhite } from "../../../assets/placeholder/placeholder";
+import {
+  PlaceBeauty,
+  PlaceCreative,
+  PlaceDigital,
+  PlaceLookbook,
+  PlacePlain,
+  PlaceThree,
+  PlaceVideo,
+  PlaceWhite,
+} from "../../../assets/placeholder/placeholder";
 import CardService from "../../../components/Card/CardService";
 
 function Services() {
-
   const DataService = [
     {
       foto: PlainServicePhoto,
-      placeholder:PlacePlain,
+      placeholder: PlacePlain,
       text: "Plain Catalogue",
     },
     {
       foto: LookbookServicePhoto,
-      placeholder:PlaceLookbook,
+      placeholder: PlaceLookbook,
       text: "LookBook",
     },
     {
@@ -33,32 +41,34 @@ function Services() {
     {
       foto: CreativeServicePhoto,
       placeholder: PlaceCreative,
-      text: 'Creative Shoot'
-    },{
+      text: "Creative Shoot",
+    },
+    {
       foto: ProductWhiteServicePhoto,
       placeholder: PlaceWhite,
-      text: "Product On White"
+      text: "Product On White",
     },
     {
       foto: DigitalImageServicePhoto,
       placeholder: PlaceDigital,
-      text: "Digital Imaging"
+      text: "Digital Imaging",
     },
     {
       foto: ProductThreeServicePhoto,
       placeholder: PlaceThree,
-      text: 'Product 3D'
+      text: "Product 3D",
     },
     {
       foto: VideoCatServicePhoto,
       placeholder: PlaceVideo,
-      text: 'Video Catalogue'
-    }
+      text: "Video Catalogue",
+    },
   ];
 
   return (
     <section className="relative bg-[#1c1c1c] py-5 px-5 z-10">
       <h1 className="font-bold text-3xl text-white">Our Services</h1>
+      <p className="text-[#9d9d9d]">Services yang Fotolaku sediakan untuk kamu yang memiliki brand </p>
       <div className="overflow-x-scroll">
         <div className="flex flex-nowrap py-6 gap-4 w-fit">
           {DataService.map((v, i) => {
