@@ -18,7 +18,7 @@ function CardProcess(props) {
       <p className="text-center text-white font-bold text-xl">
         {props.context}
       </p>
-      <p className="text-center text-white w-full">
+      <p className="text-center text-[12px] text-white w-full">
         {props.desc}
       </p>
     </div>

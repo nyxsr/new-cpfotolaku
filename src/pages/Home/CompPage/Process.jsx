@@ -47,7 +47,7 @@ function Process() {
       <h1 className="text-center font-bold text-white text-3xl">
         Proses Fotolaku
       </h1>
-      <div className="flex py-5 flex-wrap gap-5">
+      <div className="flex py-5 justify-center flex-wrap gap-5">
       {DataProcess.map((v,i)=>{
         return <CardProcess key={i} foto={v.foto} number={i + 1} placeholder={v.placeholder} context={v.context} desc={v.desc}/>
       })}
