@@ -5,7 +5,7 @@ function ElevatePitch() {
   let ref = useRef(null)
   let {scrollYProgress} = useScroll({target:ref})
 
-  const y = useTransform(scrollYProgress,[0,.1,.5,1],['0%','-5%','20%','40%'])
+  const y = useTransform(scrollYProgress,[0,.1,.4,1],['0%','-5%','25%','40%'])
   return (
     <motion.section ref={ref} style={{ y }} className='pt-3 z-10 relative w-screen bg-transparent'>
       <div className='bg-[#F3B762]/90 mx-auto px-3 py-5 w-screen'>
