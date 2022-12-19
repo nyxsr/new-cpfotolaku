@@ -2,8 +2,8 @@ import React from 'react'
 
 function Error() {
   return (
-    <div>
-      <p>Page Not Found</p>
+    <div className='flex justify-center items-center h-screen'>
+      <p className='text-2xl text-white font-bold'>Page Not Found</p>
     </div>
   )
 }

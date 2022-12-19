@@ -2,6 +2,7 @@ import { AnimatePresence } from "framer-motion"
 import { isMobile } from "react-device-detect";
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 import { ImageNotPhone } from "./assets/assets";
+import Details from "./pages/Details/Details";
 import Error from "./pages/Error/Error";
 import Home from "./pages/Home/Home";
 
@@ -32,6 +33,7 @@ function AnimatedRoutes() {
 
         //* Registered Path
         <Route path="/welcome" element={<Home/>}/>
+        <Route path="/details/:id" element={<Details/>}/>
 
         //! If Page Not Found
         <Route path="*" element={<Error/>}/>

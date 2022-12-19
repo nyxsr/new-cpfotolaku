@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsPlayCircle } from "react-icons/bs";
 import { ClientTemporaryVideo } from "../../assets/assets";
-import {AiFillStar, AiOutlineStar} from 'react-icons/ai'
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 function CardVideoClient(props) {
   const [isPlay, setPlay] = useState(false);
@@ -50,18 +50,19 @@ function CardVideoClient(props) {
       </video>
       <div className="flex flex-col py-3 gap-5 px-2">
         <p className="text-white text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem veniam rem itaque, nisi fugit praesentium libero odio eaque rerum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quidem
+          veniam rem itaque, nisi fugit praesentium libero odio eaque rerum!
         </p>
         <div className="flex relative text-[#FD8703] text-3xl">
-        {Array.from(Array(5),(e,i)=>{
-                return <AiOutlineStar/>
+          {Array.from(Array(5), (e, i) => {
+            return <AiOutlineStar />;
+          })}
+          <div className="flex text-3xl text-[#FD8703] absolute">
+            {Array.from(Array(props.rating), (e, i) => {
+              return <AiFillStar />;
             })}
-        <div className="flex text-3xl text-[#FD8703] absolute">
-            {Array.from(Array(props.rating),(e,i)=>{
-                return <AiFillStar/>
-            })}
+          </div>
         </div>
-            </div>
       </div>
     </div>
   );

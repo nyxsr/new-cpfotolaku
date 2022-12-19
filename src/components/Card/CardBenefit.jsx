@@ -6,7 +6,7 @@ function CardBenefit(props) {
     <div className='px-6'>
      <h3 className='pb-2 text-2xl font-bold'>{props.context}</h3>
      <p className='pb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nostrum.</p>
-    <img src={Benefit1} alt="" />
+    <img src={props.image} alt="" />
     </div>
   )
 }
