@@ -5,6 +5,7 @@ import { ImageNotPhone } from "./assets/assets";
 import Details from "./pages/Details/Details";
 import Error from "./pages/Error/Error";
 import Home from "./pages/Home/Home";
+import ModelDetails from "./pages/Model/ModelDetails";
 
 function App() {
   
@@ -34,6 +35,7 @@ function AnimatedRoutes() {
         //* Registered Path
         <Route path="/welcome" element={<Home/>}/>
         <Route path="/details/:id" element={<Details/>}/>
+        <Route path="/model/:id" element={<ModelDetails/>}/>
 
         //! If Page Not Found
         <Route path="*" element={<Error/>}/>
