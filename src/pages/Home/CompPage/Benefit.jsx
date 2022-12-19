@@ -8,9 +8,11 @@ import { SET_SHOW } from "../../../data/benefitSlice";
 
 const ListBenefit = [
   {
+    image: Benefit,
     context: "Insightfull Sales Creative",
   },
   {
+    image: Benefit1,
     context: "Fast, Cheap & Hight Quality",
   },
 ];
@@ -34,7 +36,7 @@ function Benefit() {
       <Model/>
       <div className="flex flex-col gap-5 justify-evenly min-h-[80%]">
         {ListBenefit.map((v, i) => {
-          return <CardBenefit key={i} context={v.context} />;
+          return <CardBenefit key={i} context={v.context} image={v.image} />;
         })}
       </div>
     </section>
