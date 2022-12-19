@@ -1,16 +1,20 @@
 import React from "react";
 import { AiFillCheckCircle, AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { useParams } from "react-router-dom";
 import { PlainServicePhoto, ProcessConsult } from "../../assets/assets";
+import { DataService } from "../../data/ListData";
 
 function Details() {
+    const {id} = useParams()
+
   return (
     <section>
       <div
         className="h-[60vh] w-screen bg-contain bg-fixed bg-no-repeat"
-        style={{ backgroundImage: `url(${PlainServicePhoto})` }}
+        style={{ backgroundImage: `url(${DataService[id].foto})` }}
       />
       <p className="pt-6 pb-2 font-bold text-2xl px-6 text-white">
-        Context Section
+        {DataService[id].text}
       </p>
       <div className="px-6 flex items-center gap-2">
         <div className="flex relative text-[#FD8703] text-xl">

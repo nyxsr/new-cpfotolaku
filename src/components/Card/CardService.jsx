@@ -2,10 +2,12 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { AiFillStar } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 function CardService(props) {
+  const navigate = useNavigate();
   return (
-    <div className="relative bg-white flex flex-col rounded-2xl py-3 px-3">
+    <div className="relative bg-white flex flex-col rounded-2xl py-3 px-3" onClick={()=>navigate(`/details/${props.id}`)}>
       <LazyLoadImage
         width={212}
         height={199}

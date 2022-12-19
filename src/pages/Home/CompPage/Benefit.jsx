@@ -1,21 +1,12 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useDispatch } from "react-redux";
-import { Benefit1 } from "../../../assets/assets";
 import Model from './Model'
 import CardBenefit from "../../../components/Card/CardBenefit";
 import { SET_SHOW } from "../../../data/benefitSlice";
+import { ListBenefit } from "../../../data/ListData";
 
-const ListBenefit = [
-  {
-    image: Benefit,
-    context: "Insightfull Sales Creative",
-  },
-  {
-    image: Benefit1,
-    context: "Fast, Cheap & Hight Quality",
-  },
-];
+
 
 function Benefit() {
   const dispatch = useDispatch();

@@ -1,18 +1,9 @@
 import React from "react";
 import CardVideoClient from "../../../components/Card/CardVideoClient";
+import { DataClient } from "../../../data/ListData";
 
 function Client() {
-  const DataClient = [
-    {
-      rating:5
-    },
-    {
-      rating:3
-    },
-    {
-      rating:4
-    }
-  ]
+  
   return (
     <section className="relative bg-[#1c1c1c] py-5 px-5 z-10">
       <h1 className="font-bold text-xl text-white">What our Client</h1>
