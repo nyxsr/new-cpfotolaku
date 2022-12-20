@@ -1,9 +1,44 @@
+export const NavbarAnimate = {
+  hidden:{
+    opacity:0
+  },
+  visible:{
+    opacity:1,
+    transition:{
+      staggerChildren:.1,
+      duration:.5
+    }
+  },
+  exit:{
+    opacity:0,
+    transition:{
+      staggerChildren:.1,
+      duration:.5
+    }
+  }
+}
+
+export const NavbarItemAnimate = {
+  hidden:{
+    x:30,
+    opacity:0
+  },
+  visible:{
+    x:0,
+    opacity:1
+  },
+  exit:{
+    x:30,
+    opacity:0
+  }
+}
+
 export const ModelAnimate1 = {
   initial: {
-    x: -20,
+    x: '25vw',
   },
   first: {
-    x: 0,
+    x: '35vw',
     transition: {
       duration: .6,
     },

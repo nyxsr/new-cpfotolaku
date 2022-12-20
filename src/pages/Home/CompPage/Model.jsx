@@ -14,7 +14,7 @@ function Model() {
       <div className="overflow-x-scroll">
         <div className="flex flex-nowrap py-6 gap-4 w-fit">
           {DataModel.map((v, i) => {
-            return <CardModel key={i} foto={v.foto} text={v.text} />;
+            return <CardModel key={i} id={i} foto={v.foto} text={v.text} />;
           })}
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { motion, useAnimation } from "framer-motion";
-import { Jose1, Jose2, Jose3, Jose4 } from "../../assets/models/models";
 import { BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 import {
   ModelAnimate1,
@@ -9,8 +8,12 @@ import {
   ModelAnimate3,
   ModelAnimate4,
 } from "../../assets/animation";
+import { useNavigate, useParams } from "react-router-dom";
+import { DataModel } from "../../data/ListData";
 
 function ModelDetails() {
+  const {id} = useParams();
+  const navigate = useNavigate();
   const [slidePos, setSlidePos] = useState(1);
   const controlsImage1 = useAnimation();
   const controlsImage2 = useAnimation();
@@ -54,28 +57,28 @@ function ModelDetails() {
   return (
     <section className="h-screen relative bg-white overflow-y-hidden overflow-x-hidden">
       <div>
-        <button className="text-3xl py-2 px-2">
+        <button className="text-3xl py-2 px-2" onClick={()=>navigate(-1)}>
           <AiOutlineArrowLeft />
         </button>
       </div>
       <div className="text-3xl font-bold px-6">
         <p>Model</p>
         <div className="relative">
-          <p className="relative z-10">Collection of Jose</p>
+          <p className="relative z-10">Collection of {DataModel[id].text}</p>
           <div className="absolute bottom-0 bg-[#FD8703] h-[1rem] w-[4rem]" />
         </div>
       </div>
       <motion.div>
         <motion.img
-          src={Jose1}
+          src={DataModel[id].bigPhoto[0]}
           variants={ModelAnimate1}
           initial="initial"
           animate={controlsImage1}
-          className="absolute top-32 right-10 h-[60%] z-10"
+          className="absolute top-32 right-10 h-[60%] object-cover z-10"
           alt=""
         />
         <motion.img
-          src={Jose2}
+          src={DataModel[id].bigPhoto[1]}
           variants={ModelAnimate2}
           initial="initial"
           animate={controlsImage2}
@@ -83,14 +86,14 @@ function ModelDetails() {
           alt=""
         />
         <motion.img
-          src={Jose3}
+          src={DataModel[id].bigPhoto[2]}
           variants={ModelAnimate3}
           initial="initial"
           animate={controlsImage3}
           className="absolute bottom-0 h-[82%] z-10 object-cover"
         />
         <motion.img
-          src={Jose4}
+          src={DataModel[id].bigPhoto[3]}
           className="absolute bottom-0 h-[92%] z-20 object-cover"
           variants={ModelAnimate4}
           initial="initial"

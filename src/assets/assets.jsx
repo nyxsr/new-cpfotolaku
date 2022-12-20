@@ -28,6 +28,7 @@ import ModelKevin from './A7205024.webp'
 import ModelNada from './A7209309.webp'
 import ModelSteven from './A7201499.webp'
 import ModelWardah from './A7203263.webp'
+import ModelNathan from './A7207756.webp'
 //*End of Model Section
 //*Process Section
 import ProcessConsult from './ProcessConsult.webp'
@@ -41,6 +42,7 @@ import ProcessReturn from './ProcessReturn.webp'
 import ClientTemporaryVideo from './ClientTemporary.mp4'
 
 export {
+  ModelNathan,
   LoveUs,
   Quote,
   ProcessConsult,

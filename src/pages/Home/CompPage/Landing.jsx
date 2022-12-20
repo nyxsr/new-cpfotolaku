@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { BsInstagram } from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
@@ -33,7 +33,7 @@ function Landing() {
       <Navbar />
       <motion.div
         style={{ y, gap }}
-        className="flex flex-col h-[60%] px-6 pt-10 fixed -z-0"
+        className="flex flex-col h-[60%] px-6 pt-20 fixed -z-0"
       >
         <motion.h1 className="text-white font-bold text-xl sm:text-3xl w-[90%]">
           Jasa Foto Yang Memahami Kebutuhan Bisnis Anda
@@ -56,7 +56,7 @@ function Landing() {
               <FaTiktok size={25} color={"#FD8703"} />
             </div>
           </div>
-        </motion.div>
+      </motion.div>
       </motion.div>
       <motion.div className={`absolute bottom-0 z-10`}>
         <ElevatePitch />
