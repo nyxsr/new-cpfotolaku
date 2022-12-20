@@ -22,7 +22,7 @@ function CardService(props) {
         <p className="font-bold text-[#FD8703]">Rp.50.000 / pcs</p>
         <div className="flex items-center">
           <AiFillStar color="#fd8703" />
-          <p className="font-semibold">4.5</p>
+          <p className="font-semibold">{props.rating}</p>
         </div>
       </div>
       <p className="text-[#747474] text-[12px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci placeat autem eveniet. Amet necessitatibus repellendus eligendi minus, culpa enim eum?</p>

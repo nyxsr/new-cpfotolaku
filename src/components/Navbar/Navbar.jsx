@@ -17,12 +17,12 @@ function Navbar() {
           initial="hidden"
           animate="visible"
           exit="exit"
-          onClick={()=>setToggle(isToggle === false ? true : false)}
+          onClick={() => setToggle(isToggle === false ? true : false)}
         >
-          {isToggle === false ? (
-            <RxHamburgerMenu size={25} color={"#181818"} />
-          ) : (
-            <AnimatePresence>
+          <AnimatePresence>
+            {isToggle === false ? (
+              <RxHamburgerMenu size={25} color={"#181818"} />
+            ) : (
               <motion.div
                 variants={NavbarAnimate}
                 initial="hidden"
@@ -31,30 +31,44 @@ function Navbar() {
                 className="flex gap-2 flex-col items-end"
               >
                 <IoClose size={25} color={"#181818"} />
-                <motion.a variants={NavbarItemAnimate} href="">
-                  Home
-                </motion.a>
+                <AnimatePresence>
+                  <motion.a variants={NavbarItemAnimate} href="">
+                    Home
+                  </motion.a>
+                </AnimatePresence>
+                <AnimatePresence>
                 <motion.a variants={NavbarItemAnimate} href="">
                   Process
                 </motion.a>
+                </AnimatePresence>
+                <AnimatePresence>
                 <motion.a variants={NavbarItemAnimate} href="">
                   Services
                 </motion.a>
+                </AnimatePresence>
+                <AnimatePresence>
                 <motion.a variants={NavbarItemAnimate} href="">
                   Model
                 </motion.a>
+                </AnimatePresence>
+                <AnimatePresence>
                 <motion.a variants={NavbarItemAnimate} href="">
                   Benefit
                 </motion.a>
+                </AnimatePresence>
+                <AnimatePresence>
                 <motion.a variants={NavbarItemAnimate} href="">
                   Our Client
                 </motion.a>
+                </AnimatePresence>
+                <AnimatePresence>
                 <motion.a variants={NavbarItemAnimate} href="">
                   Contact us
                 </motion.a>
+                </AnimatePresence>
               </motion.div>
-            </AnimatePresence>
-          )}
+            )}
+          </AnimatePresence>
         </motion.div>
       </AnimatePresence>
     </nav>
