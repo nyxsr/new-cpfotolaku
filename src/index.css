@@ -5,6 +5,7 @@
 @layer base{
   *{
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
   }
   body{
     background-color: #1c1c1c;

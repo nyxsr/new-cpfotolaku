@@ -10,6 +10,7 @@ import PlaceKevin from "./A7205024.webp";
 import PlaceJordan from "./A7208475.webp";
 import PlaceEdward from "./A7208661.webp";
 import PlaceConny from "./A7208962.webp";
+import PlaceNathan from "./PlaceNathan.webp";
 import PlaceCreative from "./A7209175.webp";
 import PlaceNada from "./A7209309.webp";
 import PlaceLookbook from "./A7209602.webp";
@@ -25,6 +26,7 @@ import PlacePhoto from './ProcessPhoto.webp'
 import PlaceReturn from './ProcessReturn.webp'
 
 export {
+  PlaceNathan,
   PlaceConsult,
   PlaceDelivery,
   PlaceEdit,
