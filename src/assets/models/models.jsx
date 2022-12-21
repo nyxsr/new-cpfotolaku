@@ -38,7 +38,43 @@ import Jordan2 from './Jordan2.webp'
 import Jordan3 from './Jordan3.webp'
 import Jordan4 from './Jordan4.webp'
 
+import Kevin1 from './Kevin1.webp'
+import Kevin2 from './Kevin2.webp'
+import Kevin3 from './Kevin3.webp'
+import Kevin4 from './Kevin4.webp'
+
+import Nada1 from './Nada1.webp'
+import Nada2 from './Nada2.webp'
+import Nada3 from './Nada3.webp'
+import Nada4 from './Nada4.webp'
+
+import Steven1 from './Steven1.webp'
+import Steven2 from './Steven2.webp'
+import Steven3 from './Steven3.webp'
+import Steven4 from './Steven4.webp'
+
+import Wardah1 from './Wardah1.webp'
+import Wardah2 from './Wardah2.webp'
+import Wardah3 from './Wardah3.webp'
+import Wardah4 from './Wardah4.webp'
+
 export {
+    Wardah1,
+    Wardah2,
+    Wardah3,
+    Wardah4,
+    Steven1,
+    Steven2,
+    Steven3,
+    Steven4,
+    Nada1,
+    Nada2,
+    Nada3,
+    Nada4,
+    Kevin1,
+    Kevin2,
+    Kevin3,
+    Kevin4,
     Jordan1,
     Jordan2,
     Jordan3,
