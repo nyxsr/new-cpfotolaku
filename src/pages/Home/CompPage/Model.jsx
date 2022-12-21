@@ -9,8 +9,7 @@ function Model() {
 
   const gotoElement = () =>{
     if (location !== null || location !== '') {
-      let hashID = location.hash
-      let sectionID = hashID.replace("#",'')
+      let sectionID = location.hash.replace("#",'')
       const element = document.getElementById(sectionID)
       element?.scrollIntoView()
     }

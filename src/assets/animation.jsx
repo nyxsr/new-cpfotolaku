@@ -85,6 +85,9 @@ export const ModelAnimate3 = {
   hidden: {
     x: "-50vw",
   },
+  fullyHidden: {
+    x: "-100vw",
+  }
 };
 
 export const ModelAnimate4 = {
@@ -98,6 +101,26 @@ export const ModelAnimate4 = {
     },
   },
   hidden: {
-    x: "-50vw",
+    x: "-60vw",
   },
+  fullyHidden: {
+    x: "-100vw",
+  }
 };
+
+export const BioVariants = {
+  initial:{
+    x:'100vw',
+    y:'-15vw'
+  },
+  first:{
+    x:"-10vw",
+    y:'-15vw',
+    transition:{
+      duration:.3
+    },
+  },
+  hidden:{
+    x: "-50vw"
+  }
+}
