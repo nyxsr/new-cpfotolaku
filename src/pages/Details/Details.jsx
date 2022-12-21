@@ -20,16 +20,17 @@ function Details() {
   return (
     <section id="first" className="relative">
       <div className="fixed top-0">
-      <Splide>
-        <SplideSlide>
-          <img src={DataService[id].foto} alt="Image 1" />
+      <Splide className="h-[55vh]">
+        {DataService[id].portoFoto.map((v,i)=>{
+          return(
+        <SplideSlide key={i}>
+          <img src={v} alt={`image ${i}`} />
         </SplideSlide>
-        <SplideSlide>
-          <img src={DataService[id].foto} alt="Image 2" />
-        </SplideSlide>
+          )
+        })}
       </Splide>
       </div>
-      <div className="h-[50vh] w-screen"/>
+      <div className="h-[55vh] w-screen"/>
       <div
         className="absolute top-4 left-4 bg-[#D7D7D7] text-2xl py-1 px-1 rounded-full"
         onClick={() => navigate("/welcome#services")}
@@ -73,7 +74,11 @@ function Details() {
         <h2 className="px-6 py-6 text-[#FD8703] font-semibold text-xl">
           Portofolio
         </h2>
-        <GridSection />
+        <section className="columns-2 gap-6 px-6">
+        {DataService[id].portoFoto.map((v,i)=>{
+          return <GridSection image={v}/>
+        })}
+        </section>
       </div>
     </section>
   );
@@ -88,15 +93,13 @@ function Terms(props) {
   );
 }
 
-function GridSection() {
+function GridSection(props) {
   return (
-    <section className="columns-2 gap-6 px-6">
       <img
-        src={ProcessConsult}
+        src={props.image}
         className="w-full py-3 object-cover rounded-lg"
         alt=""
       />
-    </section>
   );
 }
 
