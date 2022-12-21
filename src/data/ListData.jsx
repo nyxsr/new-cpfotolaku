@@ -94,6 +94,54 @@ import {
   PlaceWardah,
   PlaceNathan,
 } from "../assets/placeholder/placeholder";
+import {
+  Beauty1,
+  Beauty10,
+  Beauty11,
+  Beauty12,
+  Beauty2,
+  Beauty3,
+  Beauty4,
+  Beauty5,
+  Beauty6,
+  Beauty7,
+  Beauty8,
+  Beauty9,
+  Creative1,
+  Creative2,
+  Creative3,
+  Creative4,
+  Creative5,
+  Creative6,
+  Creative7,
+  Lookbook1,
+  Lookbook10,
+  Lookbook11,
+  Lookbook12,
+  Lookbook2,
+  Lookbook3,
+  Lookbook4,
+  Lookbook5,
+  Lookbook6,
+  Lookbook7,
+  Lookbook8,
+  Lookbook9,
+  Plain1,
+  Plain10,
+  Plain11,
+  Plain12,
+  Plain2,
+  Plain3,
+  Plain4,
+  Plain5,
+  Plain6,
+  Plain7,
+  Plain8,
+  Plain9,
+  Pow1,
+  Pow2,
+  Pow3,
+} from "../assets/portofolio/portfolio";
 
 export const DataService = [
   {
@@ -104,7 +152,7 @@ export const DataService = [
     price: "Rp.50.000 / pcs",
     desc: "lorem ipsum dolor si amet.",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [],
+    portoFoto: [Plain1,Plain2,Plain3,Plain4,Plain4,Plain5,Plain6,Plain7,Plain8,Plain9,Plain10,Plain11,Plain12],
   },
   {
     foto: LookbookServicePhoto,
@@ -114,7 +162,7 @@ export const DataService = [
     price: "Rp.50.000 / pcs",
     desc: "lorem ipsum dolor si amet.",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [],
+    portoFoto: [Lookbook1,Lookbook2,Lookbook3,Lookbook4,Lookbook5,Lookbook6,Lookbook7,Lookbook8,Lookbook9,Lookbook10,Lookbook11,Lookbook12],
   },
   {
     foto: BeautyServicePhoto,
@@ -124,7 +172,7 @@ export const DataService = [
     price: "Rp.50.000 / pcs",
     desc: "lorem ipsum dolor si amet.",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [],
+    portoFoto: [Beauty1,Beauty2,Beauty3,Beauty4,Beauty5,Beauty6,Beauty7,Beauty8,Beauty9,Beauty10,Beauty11,Beauty12],
   },
   {
     foto: CreativeServicePhoto,
@@ -134,7 +182,7 @@ export const DataService = [
     price: "Rp.50.000 / pcs",
     desc: "lorem ipsum dolor si amet.",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [],
+    portoFoto: [Creative1,Creative2,Creative3,Creative4,Creative5,Creative6,Creative7],
   },
   {
     foto: ProductWhiteServicePhoto,
@@ -144,7 +192,7 @@ export const DataService = [
     price: "Rp.50.000 / pcs",
     desc: "lorem ipsum dolor si amet.",
     terms: ["lorem", "ipsum", "dolor"],
-    portoFoto: [],
+    portoFoto: [Pow1,Pow2,Pow3],
   },
   {
     foto: DigitalImageServicePhoto,
@@ -191,19 +239,19 @@ export const ListBenefit = [
 
 export const DataClient = [
   {
-    id:1,
+    id: 1,
     rating: 5,
-    src:ClientTemporaryVideo
+    src: ClientTemporaryVideo,
   },
   {
-    id:2,
+    id: 2,
     rating: 3,
-    src:ClientTemporaryVideo
+    src: ClientTemporaryVideo,
   },
   {
-    id:3,
+    id: 3,
     rating: 4,
-    src:ClientTemporaryVideo
+    src: ClientTemporaryVideo,
   },
 ];
 
@@ -213,215 +261,215 @@ export const DataModel = [
     placeholder: PlaceNathan,
     text: "Nathan",
     bigPhoto: [Nathan1, Nathan2, Nathan3, Nathan4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelDio,
     placeholder: PlaceDio,
     text: "Dio",
     bigPhoto: [Dio1, Dio2, Dio3, Dio4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelJose,
     placeholder: PlaceJose,
     text: "Jose",
     bigPhoto: [Jose1, Jose2, Jose3, Jose4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelJessica,
     placeholder: PlaceJessica,
     text: "Jessica",
     bigPhoto: [Jessica1, Jessica2, Jessica3, Jessica4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelEdward,
     placeholder: PlaceEdward,
     text: "Edward",
     bigPhoto: [Edward1, Edward2, Edward4, Edward3],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelConny,
     placeholder: PlaceConny,
     text: "Conny",
     bigPhoto: [Connie1, Connie4, Connie3, Connie2],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelJennifer,
     placeholder: PlaceJennifer,
     text: "Jennifer",
     bigPhoto: [Jennifer1, Jennifer2, Jennifer3, Jennifer4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelJordan,
     placeholder: PlaceJordan,
     text: "Jordan",
-    bigPhoto: [Jordan1,Jordan2,Jordan3,Jordan4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bigPhoto: [Jordan1, Jordan2, Jordan3, Jordan4],
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelKevin,
     placeholder: PlaceKevin,
     text: "Kevin",
-    bigPhoto: [Kevin1,Kevin2,Kevin3,Kevin4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bigPhoto: [Kevin1, Kevin2, Kevin3, Kevin4],
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelNada,
     placeholder: PlaceNada,
     text: "Nada",
-    bigPhoto: [Nada1,Nada2,Nada3,Nada4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bigPhoto: [Nada1, Nada2, Nada3, Nada4],
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelSteven,
     placeholder: PlaceSteven,
     text: "Steven",
-    bigPhoto:[Steven1,Steven2,Steven3,Steven4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bigPhoto: [Steven1, Steven2, Steven3, Steven4],
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
   {
     foto: ModelWardah,
     placeholder: PlaceWardah,
     text: "Wardah",
-    bigPhoto:[Wardah1,Wardah2,Wardah3,Wardah4],
-    bio:{
-      tinggi:175,
-      umur:22,
-      ukuran:{
-        sepatu:40,
-        baju:'L'
+    bigPhoto: [Wardah1, Wardah2, Wardah3, Wardah4],
+    bio: {
+      tinggi: 175,
+      umur: 22,
+      ukuran: {
+        sepatu: 40,
+        baju: "L",
       },
-      lebar:{
-        pinggang:32,
-        dada:32
-      }
-    }
+      lebar: {
+        pinggang: 32,
+        dada: 32,
+      },
+    },
   },
 ];
