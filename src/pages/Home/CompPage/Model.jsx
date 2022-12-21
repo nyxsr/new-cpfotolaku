@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import CardModel from "../../../components/Card/CardModel";
 import { DataModel } from "../../../data/ListData";
 
 function Model() {
 
+  const location = useLocation()
+
+  const gotoElement = () =>{
+    if (location !== null || location !== '') {
+      let hashID = location.hash
+      let sectionID = hashID.replace("#",'')
+      const element = document.getElementById(sectionID)
+      element?.scrollIntoView()
+    }
+  }
+
+  useEffect(()=>{
+    if (location !== '' || location !== null) {
+      gotoElement();
+    }
+  },[location])
+
   return (
-    <section className="relative px-5 z-10">
+    <section id="model" className="relative px-5 z-10">
       <h1 className="font-bold text-2xl">Complete Model Collection</h1>
       <p className="text-[#9d9d9d]">
         Fotolaku memiliki model yang sangat professional yang cocok untuk brand

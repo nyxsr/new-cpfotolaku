@@ -8,7 +8,7 @@ import {
   ModelAnimate3,
   ModelAnimate4,
 } from "../../assets/animation";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { DataModel } from "../../data/ListData";
 
 function ModelDetails() {
@@ -54,12 +54,13 @@ function ModelDetails() {
     controlsImage1.start("first");
     controlsImage2.start("first");
   }, []);
+
   return (
     <section className="h-screen relative bg-white overflow-y-hidden overflow-x-hidden">
-      <div>
-        <button className="text-3xl py-2 px-2" onClick={()=>navigate(-1)}>
+      <div className="ml-5">
+        <Link className="text-4xl py-2 px-2" to='/welcome#model'>
           <AiOutlineArrowLeft />
-        </button>
+        </Link>
       </div>
       <div className="text-3xl font-bold px-6">
         <p>Model</p>
