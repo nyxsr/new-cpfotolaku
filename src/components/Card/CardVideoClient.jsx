@@ -16,11 +16,11 @@ function CardVideoClient(props) {
     }
   };
   return (
-    <div className="relative w-[21.875rem] my-12 h-fit border-[#FD8703] border-2">
+    <div className="relative w-[21.875rem] my-12 h-fit border-[#FD8703] rounded-xl border-2">
       <div
         className={`${
           isPlay === false ? "bg-black/30" : ""
-        } w-[21.875rem] h-[14.5rem] absolute`}
+        } w-[21.875rem] h-[14.5rem] absolute rounded-xl`}
       >
         {isPlay === false && (
           <div className="w-full h-full flex items-center justify-center text-7xl text-white">
@@ -44,7 +44,7 @@ function CardVideoClient(props) {
       </div>
       <video
         onClick={(e) => playPauseVideo(e)}
-        className="w-[21.875rem] h-[14.5rem] object-cover"
+        className="w-[21.875rem] h-[14.5rem] object-cover rounded-xl"
       >
         <source src={ClientTemporaryVideo} type="video/mp4" />
       </video>

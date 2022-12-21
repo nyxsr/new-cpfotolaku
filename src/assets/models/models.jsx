@@ -33,7 +33,16 @@ import Nathan2 from './Nathan2.webp'
 import Nathan3 from './Nathan3.webp'
 import Nathan4 from './Nathan4.webp'
 
+import Jordan1 from './Jordan1.webp'
+import Jordan2 from './Jordan2.webp'
+import Jordan3 from './Jordan3.webp'
+import Jordan4 from './Jordan4.webp'
+
 export {
+    Jordan1,
+    Jordan2,
+    Jordan3,
+    Jordan4,
     Nathan1,
     Nathan2,
     Nathan3,

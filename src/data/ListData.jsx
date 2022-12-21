@@ -20,6 +20,7 @@ import {
   ModelSteven,
   ModelWardah,
   ModelNathan,
+  ClientTemporaryVideo,
 } from "../assets/assets";
 import {
   Connie1,
@@ -42,6 +43,10 @@ import {
   Jessica2,
   Jessica3,
   Jessica4,
+  Jordan1,
+  Jordan2,
+  Jordan3,
+  Jordan4,
   Jose1,
   Jose2,
   Jose3,
@@ -170,13 +175,19 @@ export const ListBenefit = [
 
 export const DataClient = [
   {
+    id:1,
     rating: 5,
+    src:ClientTemporaryVideo
   },
   {
+    id:2,
     rating: 3,
+    src:ClientTemporaryVideo
   },
   {
+    id:3,
     rating: 4,
+    src:ClientTemporaryVideo
   },
 ];
 
@@ -227,6 +238,7 @@ export const DataModel = [
     foto: ModelJordan,
     placeholder: PlaceJordan,
     text: "Jordan",
+    bigPhoto: [Jordan1,Jordan2,Jordan3,Jordan4]
   },
   {
     foto: ModelKevin,

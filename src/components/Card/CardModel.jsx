@@ -1,12 +1,12 @@
 import React from "react";
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function CardModel(props) {
-  const navigate = useNavigate();
+
   return (
-    <div className="w-[12.375rem] h-[15.25rem] relative" onClick={()=>navigate(`/model/${props.id}`)}>
+    <Link className="w-[12.375rem] h-[15.25rem] relative" to={`/model/${props.id}`}>
       <LazyLoadImage
         width={198} height={244}
         placeholderSrc={props.placeholder}
@@ -19,7 +19,7 @@ function CardModel(props) {
       <p className="absolute bottom-5 left-3 z-10 text-white font-bold text-xl">
         {props.text}
       </p>
-    </div>
+    </Link>
   );
 }
 

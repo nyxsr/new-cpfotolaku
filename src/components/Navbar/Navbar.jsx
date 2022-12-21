@@ -32,37 +32,37 @@ function Navbar() {
               >
                 <IoClose size={25} color={"#181818"} />
                 <AnimatePresence>
-                  <motion.a variants={NavbarItemAnimate} href="">
+                  <motion.a variants={NavbarItemAnimate} href="#landing">
                     Home
                   </motion.a>
                 </AnimatePresence>
                 <AnimatePresence>
-                <motion.a variants={NavbarItemAnimate} href="">
+                <motion.a variants={NavbarItemAnimate} href="#process">
                   Process
                 </motion.a>
                 </AnimatePresence>
                 <AnimatePresence>
-                <motion.a variants={NavbarItemAnimate} href="">
+                <motion.a variants={NavbarItemAnimate} href="#services">
                   Services
                 </motion.a>
                 </AnimatePresence>
                 <AnimatePresence>
-                <motion.a variants={NavbarItemAnimate} href="">
+                <motion.a variants={NavbarItemAnimate} href="#model">
                   Model
                 </motion.a>
                 </AnimatePresence>
                 <AnimatePresence>
-                <motion.a variants={NavbarItemAnimate} href="">
+                <motion.a variants={NavbarItemAnimate} href="#benefit">
                   Benefit
                 </motion.a>
                 </AnimatePresence>
                 <AnimatePresence>
-                <motion.a variants={NavbarItemAnimate} href="">
+                <motion.a variants={NavbarItemAnimate} href="#client">
                   Our Client
                 </motion.a>
                 </AnimatePresence>
                 <AnimatePresence>
-                <motion.a variants={NavbarItemAnimate} href="">
+                <motion.a variants={NavbarItemAnimate} href="#footer">
                   Contact us
                 </motion.a>
                 </AnimatePresence>

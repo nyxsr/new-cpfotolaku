@@ -21,7 +21,7 @@ function Landing() {
   const gap = useTransform(scrollY, [0, 300], ["80%", "0%"]);
   const ctaY = useTransform(scrollY, [0, 300], ["0%", "-80%"]);
   return (
-    <motion.section className="h-[150vh] relative w-screen">
+    <motion.section id="landing" className="h-[130vh] relative w-screen">
         <AnimatePresence>
       {hidePhoto === false && (
           <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} style={{ backgroundImage: `url(${BGHero})` }} className='w-full h-full absolute bg-no-repeat bg-fixed bg-fill z-0'/>

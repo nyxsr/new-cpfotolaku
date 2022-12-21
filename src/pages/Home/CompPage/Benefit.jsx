@@ -25,7 +25,7 @@ function Benefit() {
         Kenapa Fotolaku ?
       </h1>
       <Model/>
-      <div className="flex flex-col gap-5 justify-evenly min-h-[80%]">
+      <div id="benefit" className="flex flex-col gap-5 justify-evenly min-h-[80%]">
         {ListBenefit.map((v, i) => {
           return <CardBenefit key={i} context={v.context} image={v.image} />;
         })}
