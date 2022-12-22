@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { AiFillCheckCircle, AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { useNavigate, useParams } from "react-router-dom";
-import { ProcessConsult, ProcessEdit } from "../../assets/assets";
 import { DataService } from "../../data/ListData";
 import { FaArrowLeft } from "react-icons/fa";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
 
 function Details() {

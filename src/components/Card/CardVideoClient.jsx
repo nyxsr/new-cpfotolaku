@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import { BsPlayCircle } from "react-icons/bs";
 import { ClientTemporaryVideo } from "../../assets/assets";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
-function CardVideoClient(props) {
+function CardVideoClient(props,ref) {
   const [isPlay, setPlay] = useState(false);
 
   const playPauseVideo = (e) => {
     if (isPlay === false) {
+      const videos = document.getElementsByClassName('video')
+      Array.prototype.forEach.call(videos, video =>{
+        video.pause();
+      })
       setPlay(true);
       e.target.play();
     } else {
@@ -44,7 +48,9 @@ function CardVideoClient(props) {
       </div>
       <video
         onClick={(e) => playPauseVideo(e)}
-        className="w-[21.875rem] h-[14.5rem] object-cover rounded-xl"
+        id={props.id}
+        ref={ref}
+        className="video w-[21.875rem] h-[14.5rem] object-cover rounded-xl"
       >
         <source src={ClientTemporaryVideo} type="video/mp4" />
       </video>
@@ -68,4 +74,6 @@ function CardVideoClient(props) {
   );
 }
 
-export default CardVideoClient;
+const WrappedCardVideoClient = forwardRef(CardVideoClient);
+
+export default WrappedCardVideoClient;
