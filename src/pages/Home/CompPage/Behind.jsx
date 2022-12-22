@@ -8,7 +8,13 @@ function Behind() {
       <h1 className="font-bold text-3xl text-[#D96902] uppercase">
         Behind The Scene
       </h1>
-      <CardBehind />
+      <div className="overflow-x-scroll">
+        <div className="flex flex-nowrap gap-4 w-fit">
+          <CardBehind />
+          <CardBehind />
+          <CardBehind />
+        </div>
+      </div>
     </section>
   );
 }

@@ -73,10 +73,10 @@ function Landing() {
           } `}
           style={{ y: ctaY }}
         >
-          <div>
-            <button className="bg-[#FD8703] font-semibold py-2 px-2 w-fit rounded-md">
+          <div className="flex flex-col">
+            <a className="bg-[#FD8703] font-semibold py-2 px-2 w-fit rounded-md" href="https://wa.me/081394683395">
               Let's Talk!
-            </button>
+            </a>
             <p className="text-white text-sm">with our creative consultant</p>
           </div>
           <div className="flex gap-[0.8rem]">

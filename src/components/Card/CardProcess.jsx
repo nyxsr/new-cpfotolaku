@@ -1,9 +1,10 @@
 import React from 'react'
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from 'framer-motion';
 
 function CardProcess(props) {
   return (
-    <div className="flex flex-col">
+    <motion.div initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }} className="flex flex-col">
     <div className="relative w-[11.25rem]">
       <LazyLoadImage
         width={180}
@@ -22,7 +23,7 @@ function CardProcess(props) {
         {props.desc}
       </p>
     </div>
-  </div>
+  </motion.div>
   )
 }
 
