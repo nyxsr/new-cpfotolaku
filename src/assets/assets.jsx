@@ -3,7 +3,7 @@ import Logo from "./FOTOLAKU-03-fix.webp";
 import BGBenefit from "./bg-benefit.webp";
 import Benefit1 from "./krakenimages-376KN_ISplE-unsplash.webp";
 import ImageNotPhone from "./onPhone.svg";
-import TemporaryVideo from "./Beautistory_Square.mp4";
+import TemporaryVideo from "./output.webm";
 import Quote from './quotes.svg'
 import LoveUs from './BrandLove.webp'
 //*Service Section
