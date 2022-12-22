@@ -23,6 +23,10 @@ function Landing() {
     setHideVideo(false);
   };
 
+  const handleSocial = (link) =>{
+    window.location.href = link
+  }
+
   const y = useTransform(scrollY, [0, 300], ["0%", "-15%"]);
   const gap = useTransform(scrollY, [0, 300], ["80%", "0%"]);
   const ctaY = useTransform(scrollY, [0, 300], ["0%", "-80%"]);
@@ -82,17 +86,19 @@ function Landing() {
           <div className="flex gap-[0.8rem]">
             <div
               className={`bg-[#FEF0CD] ${
-                smallDevices ? "w-[1.5rem] h-[1.5rem]" : "w-[3rem] h-[3rem]"
+                smallDevices ? "w-[1.8rem] h-[1.8rem]" : "w-[3rem] h-[3rem]"
               } rounded-full flex justify-center items-center`}
+              onClick={()=>handleSocial('https://www.instagram.com/unmute.visual/')}
             >
-              <BsInstagram size={smallDevices ? 15 : 25} color={"#FD8703"} />
+              <BsInstagram size={smallDevices ? 18 : 25} color={"#FD8703"} />
             </div>
             <div
               className={`bg-[#FEF0CD] ${
-                smallDevices ? "w-[1.5rem] h-[1.5rem]" : "w-[3rem] h-[3rem]"
+                smallDevices ? "w-[1.8rem] h-[1.8rem]" : "w-[3rem] h-[3rem]"
               } rounded-full flex justify-center items-center`}
+              onClick={()=>handleSocial('https://www.tiktok.com/@foto.laku?_t=8YO2h0zNG7u&_r=1')}
             >
-              <FaTiktok size={smallDevices ? 15 : 25} color={"#FD8703"} />
+              <FaTiktok size={smallDevices ? 18 : 25} color={"#FD8703"} />
             </div>
           </div>
         </motion.div>
