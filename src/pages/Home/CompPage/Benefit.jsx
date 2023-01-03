@@ -21,13 +21,13 @@ function Benefit() {
   }, [inView]);
   return (
     <section ref={ref} className="bg-[#efefef] relative py-10 z-10">
-      <h1 className="text-center font-bold pb-10 text-3xl">
+      <h1 className="text-center text-[#fd8703] font-bold pb-10 text-3xl">
         Kenapa Fotolaku ?
       </h1>
       <Model/>
       <div id="benefit" className="flex flex-col gap-5 justify-evenly min-h-[80%]">
         {ListBenefit.map((v, i) => {
-          return <CardBenefit key={i} context={v.context} image={v.image} />;
+          return <CardBenefit key={i} context={v.context} image={v.image} detail={v.detail} />;
         })}
       </div>
     </section>
