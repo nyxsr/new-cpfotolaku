@@ -6,6 +6,8 @@ import ImageNotPhone from "./onPhone.svg";
 import TemporaryVideo from "./output.webm";
 import Quote from './quotes.svg'
 import LoveUs from './BrandLove.webp'
+import Model from './Model.webp'
+import MUA from './MUA.webp'
 //*Service Section
 import PlainServicePhoto from "./A7202354.webp";
 import LookbookServicePhoto from "./A7209602.webp";
@@ -42,6 +44,8 @@ import ProcessReturn from './ProcessReturn.webp'
 import ClientTemporaryVideo from './ClientTemporary.mp4'
 
 export {
+  Model,
+  MUA,
   ModelNathan,
   LoveUs,
   Quote,

@@ -147,6 +147,7 @@ export const DataService = [
   {
     foto: PlainServicePhoto,
     placeholder: PlacePlain,
+    category:'Photo',
     text: "Plain Catalogue",
     rating: 5,
     price: "Rp.50.000 / pcs",
@@ -157,6 +158,7 @@ export const DataService = [
   {
     foto: LookbookServicePhoto,
     placeholder: PlaceLookbook,
+    category:'Photo',
     text: "LookBook",
     rating: 4,
     price: "Rp.50.000 / pcs",
@@ -167,6 +169,7 @@ export const DataService = [
   {
     foto: BeautyServicePhoto,
     placeholder: PlaceBeauty,
+    category:'Photo',
     text: "Beauty Shoot",
     rating: 4,
     price: "Rp.50.000 / pcs",
@@ -177,6 +180,7 @@ export const DataService = [
   {
     foto: CreativeServicePhoto,
     placeholder: PlaceCreative,
+    category:'Photo',
     text: "Creative Shoot",
     rating: 4,
     price: "Rp.50.000 / pcs",
@@ -187,6 +191,7 @@ export const DataService = [
   {
     foto: ProductWhiteServicePhoto,
     placeholder: PlaceWhite,
+    category:'Photo',
     text: "Product On White",
     rating: 4,
     price: "Rp.50.000 / pcs",
@@ -197,6 +202,7 @@ export const DataService = [
   {
     foto: DigitalImageServicePhoto,
     placeholder: PlaceDigital,
+    category:'Photo',
     text: "Digital Imaging",
     rating: 4,
     price: "Rp.50.000 / pcs",
@@ -207,7 +213,8 @@ export const DataService = [
   {
     foto: ProductThreeServicePhoto,
     placeholder: PlaceThree,
-    text: "Product 3D",
+    category:'Video',
+    text: "Video 3D",
     rating: 4,
     price: "Rp.50.000 / pcs",
     desc: "lorem ipsum dolor si amet.",
@@ -217,7 +224,19 @@ export const DataService = [
   {
     foto: VideoCatServicePhoto,
     placeholder: PlaceVideo,
+    category:'Video',
     text: "Video Catalogue",
+    rating: 4,
+    price: "Rp.50.000 / pcs",
+    desc: "lorem ipsum dolor si amet.",
+    terms: ["lorem", "ipsum", "dolor"],
+    portoFoto: [],
+  },
+  {
+    foto: VideoCatServicePhoto,
+    placeholder: PlaceVideo,
+    category:'Video',
+    text: "Video Creative",
     rating: 4,
     price: "Rp.50.000 / pcs",
     desc: "lorem ipsum dolor si amet.",
@@ -229,11 +248,21 @@ export const DataService = [
 export const ListBenefit = [
   {
     image: Benefit1,
-    context: "Insightfull Sales Creative",
+    context: "2. Cara Pemesanan Nggak Ribet!",
+    detail:[
+      {
+        text:'Gaperlu Siapin Model',
+      },
+      {
+        text:'Gaperlu Siapin Fotografer',
+      },
+      {
+        text:'Gaperlu Siapin MUA/Stylist',
+      },
+    ]
   },
   {
-    image: Benefit1,
-    context: "Fast, Cheap & Hight Quality",
+    context: "3. Berpengalaman dan Profesional",
   },
 ];
 
